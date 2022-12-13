@@ -15,4 +15,4 @@ const htmlRoutes = require('./routes/htmlRoutes');
 app.use(htmlRoutes);
 
 //creqate server listener
-app.listen(PORT, () => console.log('Listening on PORT: ${PORT}'));
+app.listen(PORT, () => console.log(`Listening on PORT: ${PORT}`));
