@@ -15,8 +15,8 @@ Week 11 Express.js Challenge
 * [Installation](#installation)
 * [Usage](#usage)
 * [Technologies Used](#technologies-used)
-* [Technology Links](#technology-links)
-* [Project Links](#project-links)
+* [Technology Links](#technology-link)
+* [Project Link](#project-links)
 * [License](#license)
 * [Questions](#questions)
 
