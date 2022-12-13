@@ -68,6 +68,8 @@ App is deployed through Heroku.
 
 [Express Note Taker Repo](https://github.com/cmarielorber/Express_Note_Taker)
 
+[Express Lorber Note Taker on Heroku](https://express-lorber-note-taker.herokuapp.com/notes)
+
 ## License
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
