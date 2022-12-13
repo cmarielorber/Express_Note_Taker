@@ -66,7 +66,7 @@ The user will be prompted with various questions to build their team. Once the u
 
 ## Project Link
 
-[Express Note Taker Repo](LINK)
+[Express Note Taker Repo](https://github.com/cmarielorber/Express_Note_Taker)
 
 ## License
 
