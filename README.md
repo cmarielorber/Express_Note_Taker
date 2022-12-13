@@ -25,19 +25,19 @@ Week 11 Express.js Challenge
 [Express Note Taker Demo](PUT LINK HERE)
 
 ## Installation
-First clone the repository then run the following command to install Inquirer and Jest dependency packages:
+First clone the repository then run the following command to install dependency packages:
 ```
 npm i
 ```
 
-## Usage (UPDATE THIS)
+## Usage 
 
 Once the dependencies have been installed, type in the following command into your terminal to start the application:
 ```
-node index.js
+nodemon server.js
 ```
 
-The user will be prompted with various questions to build their team. Once the user has completed their member additions, an HTML will be generated to display the team.
+App is deployed through Heroku. 
 
 ## Technologies Used
 
