@@ -7,13 +7,14 @@ const uuid = require('uuid');
 const DB = require('../db/DB')
 
 //to get notes
-router.get('api/notes', async function (req, res) {
+router.get('/notes', async function (req, res) {
     const notes = await DB.readNotes();
+    console.log('***********',notes)
     return res.json(notes);
 });
 
 //new route to add a new note then add to json file
-router.post('/api/notes', async function (req, res) {
+router.post('/notes', async function (req, res) {
     const currentNotes = await DB.readNotes();
     let newNote = {
         id: uuid(),
@@ -25,7 +26,7 @@ router.post('/api/notes', async function (req, res) {
 });
 
 //route to delete notes
-router.delete('/api/notes/:id', async function (req, res) {
+router.delete('/notes/:id', async function (req, res) {
     //separates by id
     const noteDelete = req.params.id;
     //notes stored in json file
