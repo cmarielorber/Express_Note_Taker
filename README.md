@@ -29,15 +29,38 @@ First clone the repository then run the following command to install dependency 
 ```
 npm i
 ```
+The following HTML routes should be created:
+
+GET /notes should return the notes.html file.
+
+GET * should return the index.html file.
+
+The following API routes should be created:
+
+GET /api/notes should read the db.json file and return all saved notes as JSON.
+
+POST /api/notes should receive a new note to save on the request body, add it to the db.json file, and then return the new note to the client. You'll need to find a way to give each note a unique id when it's saved (look into npm packages that could do this for you).
 
 ## Usage 
 
-Once the dependencies have been installed, type in the following command into your terminal to start the application:
-```
-nodemon server.js
-```
+![Note Taker](https://user-images.githubusercontent.com/109984761/207503943-a8639405-80e6-4a0e-aadc-49ac7af3db06.png)
+![Note Open](https://user-images.githubusercontent.com/109984761/207503949-727fce08-9a8b-4cc9-82e9-ef9238fdb3c2.png)
 
-App is deployed through Heroku. 
+GIVEN a note-taking application
+WHEN I open the Note Taker
+THEN I am presented with a landing page with a link to a notes page
+WHEN I click on the link to the notes page
+THEN I am presented with a page with existing notes listed in the left-hand column, plus empty fields to enter a new note title and the note’s text in the right-hand column
+WHEN I enter a new note title and the note’s text
+THEN a Save icon appears in the navigation at the top of the page
+WHEN I click on the Save icon
+THEN the new note I have entered is saved and appears in the left-hand column with the other existing notes
+WHEN I click on an existing note in the list in the left-hand column
+THEN that note appears in the right-hand column
+WHEN I click on the Write icon in the navigation at the top of the page
+THEN I am presented with empty fields to enter a new note title and the note’s text in the right-hand column
+
+DELETE /api/notes/:id should receive a query parameter containing the id of a note to delete. In order to delete a note, you'll need to read all notes from the db.json file, remove the note with the given id property, and then rewrite the notes to the db.json file.
 
 ## Technologies Used
 
